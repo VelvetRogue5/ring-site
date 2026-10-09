@@ -5,6 +5,8 @@ Static privacy site for Ring Bonbon (`ai.ringbonbon.game`), adapted from the str
 ## Pages
 
 - `privacy.html`: privacy policy.
+- `terms-of-use.html`: terms of use, referring to Apple's standard EULA for App Store distribution rather than declaring a custom EULA.
+- `support/index.html`: public technical support and gameplay help.
 - `index.html`: redirects to the policy.
 - `assets/`: local stylesheet and the current game icon. No third-party fonts, scripts, analytics, or cookies are added.
 
@@ -12,6 +14,8 @@ Static privacy site for Ring Bonbon (`ai.ringbonbon.game`), adapted from the str
 
 In GitHub repository Settings → Pages, select Deploy from a branch, branch `main`, folder `/ (root)`.
 Expected policy URL after Pages deployment: https://velvetrogue5.github.io/ring-site/privacy.html
+Support URL: https://velvetrogue5.github.io/ring-site/support/
+Terms URL: https://velvetrogue5.github.io/ring-site/terms-of-use.html
 Pushing the repository alone does not guarantee Pages has been enabled or deployed.
 
 ## Policy basis
