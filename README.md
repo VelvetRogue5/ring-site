@@ -1,6 +1,6 @@
 # Ring Bonbon Privacy Site
 
-Static privacy site for Ring Bonbon (`ai.ringbonbon.game`), adapted from the structure of the Hanabi privacy page and styled to match Ring Bonbon. The English policy covers the current iOS and Android project configuration. The contact email is carried over from the reference site: `velvet_rogue_5@proton.me`.
+Static privacy site for Ring Bonbon (`ai.ringbonbon.game`), adapted from the structure of the Hanabi privacy page and styled to match Ring Bonbon. The English policy covers iOS and Android, including the planned advertising, Firebase, Meta (Facebook) SDK, and AppsFlyer integrations. The contact email is carried over from the reference site: `velvet_rogue_5@proton.me`.
 
 ## Pages
 
@@ -20,13 +20,8 @@ Pushing the repository alone does not guarantee Pages has been enabled or deploy
 
 ## Policy basis
 
-Reviewed on October 9, 2026 against the Ring Bonbon Unity project at commit `81ccb0c`:
+Updated on October 12, 2026 ahead of the advertising, Firebase, Meta (Facebook) SDK, and AppsFlyer integrations requested by the project owner. The October 9 review of the Unity project at commit `81ccb0c` established local PlayerPrefs saves and no account or in-app purchases; it predates the SDK integration work.
 
-- `RingGameController.cs`: local PlayerPrefs level progress and coin balance.
-- `SoundBank.cs`: local sound and vibration preferences.
-- `RingGameController.Navigation.cs`: reads existing cosmetic inventory preferences; shop is not currently exposed.
-- `Packages/manifest.json` and Assets: no integrated advertising, attribution, Firebase, or other analytics SDK found.
-- `ProjectSettings/UnityConnectSettings.asset`: Unity services, analytics, ads, and cloud diagnostics disabled.
-- No runtime network request, account, cloud-save, or purchase integration found in game scripts.
+The policy now covers conditional SDK data collection, purposes, sharing, advertising identifiers, consent and system controls, retention, privacy requests, and children's privacy. Provider references use Firebase's privacy documentation, Meta's privacy policy, and AppsFlyer's Services Privacy Policy.
 
-The policy intentionally does not copy Hanabi's advertising, Firebase, AppsFlyer, Meta, remote-level-download, or tracking clauses. Re-audit the final release build and update the policy and store privacy declarations before enabling such services. This is a description of the reviewed implementation, not a legal-compliance certification.
+Before release, verify enabled Firebase products, Meta and AppsFlyer events and identifier settings, the final ad network and mediation partners, consent behavior, age restrictions, and retention against the release build. Add the actual advertising providers and their privacy links when selected, and align App Store privacy and Google Play Data safety declarations with actual behavior. Updating this page does not configure SDK consent or certify legal compliance.
